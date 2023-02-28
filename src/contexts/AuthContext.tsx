@@ -60,7 +60,7 @@ export function AuthContextProvider({ children }: AuthProviderProps) {
     // return responseLogin;
     console.log({ email, password });
     setData({
-      firstName: "Fer",
+      firstName: "Fernando",
       token: "12312312312313",
       signed: true,
     });

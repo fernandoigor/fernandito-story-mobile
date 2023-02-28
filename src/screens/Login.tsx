@@ -18,7 +18,7 @@ export default function Login() {
 
   const handleLogin = () => {
     console.log("Login");
-    login({ email: "fer2", password: "12312312312" });
+    login({ email: "fer@email.com", password: "password" });
   };
   const handleRegister = () => {
     console.log("handleRegister");
@@ -40,7 +40,15 @@ export default function Login() {
           <View className="mt-2 mb-8 w-10/12">
             <View className="mx-4 flex-row items-center justify-start">
               <Checkbox />
-              <Text className="ml-2 drop-shadow-2xl font-bold">
+              <Text
+                style={{
+                  marginLeft: 8,
+                  fontWeight: "bold",
+                  textShadowColor: "rgba(255, 255, 255, 1.00)",
+                  textShadowOffset: { width: 0, height: 0 },
+                  textShadowRadius: 3,
+                }}
+              >
                 Manter Logado
               </Text>
             </View>
