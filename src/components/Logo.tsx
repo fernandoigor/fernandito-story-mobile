@@ -1,8 +1,8 @@
-import { Text } from "react-native";
+import { Text, View } from "react-native";
 
 export default function Logo() {
   return (
-    <>
+    <View className="flex-col items-end">
       <Text
         style={{
           fontSize: 64,
@@ -23,12 +23,11 @@ export default function Logo() {
           textShadowOffset: { width: -1, height: 1 },
           textShadowRadius: 5,
           top: -36,
-          left: 10,
           position: "relative",
         }}
       >
         fernandito
       </Text>
-    </>
+    </View>
   );
 }
